@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Vue Test1";
+    ViewData["Title"] = "Vue Plain";
 }
 
 @*-------------------------------------------------------------------------------------------------------------------------------------------------*@
@@ -7,20 +7,6 @@
     [v-cloak] {
         display: none;
     }
-
-    .highlight {
-        border: solid 3px red;
-        color: red;
-    }
-
-    .shooting-star-leave-to, .shooting-star-enter {
-        opacity: 0;
-    }
-
-    .neo-list-leave-to, .neo-list-enter {
-        opacity: 0;
-    }
-
 </style>
 @*-------------------------------------------------------------------------------------------------------------------------------------------------*@
 
@@ -90,7 +76,6 @@ Vue.component('asteroid-grid', {
                     <transition name="shooting-star"> \
                         <div class="mt-3 ml-3" v-cloak v-if="numAsteroids > 0 && showSummary"> \
                             <p>showing {{numAsteroids}} items</p> \
-                            <p>{{closestObject}} has the smallest miss distance.</p> \
                         </div> \
                     </transition> \
                     <div class="m-3"> \
@@ -118,7 +103,7 @@ Vue.component('asteroid-grid', {
                                         </li> \
                                     </ul> \
                                 </td> \
-                                <td><button class="btn btn-warning" v-on:click="remove(index)">remove</button></td> \
+                                <td><button class="btn btn-info" v-on:click="remove(index)">remove</button></td> \
                              </tr> \
                         </tbody> \
                     </table> \

@@ -1,7 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Vue Local Request";
+    ViewData["Title"] = "Vue With Payload";
 }
 
+<input type="hidden" id="payloadJSON" value="@ViewBag.payloadJSON" />
 
 @*-------------------------------------------------------------------------------------------------------------------------------------------------*@
 <style>
@@ -14,7 +15,7 @@
 @*Insert component*@
 <div id="app">
     <div class="container">
-        <asteroid-grid v-on:remove="remove" :asteroids="asteroids" header="Requesting data from Local Server"></asteroid-grid>
+        <asteroid-grid v-on:remove="remove" :asteroids="asteroids" header="Backend Payload"></asteroid-grid>
     </div>
 </div>
 @*-------------------------------------------------------------------------------------------------------------------------------------------------*@
@@ -38,16 +39,21 @@
             asteroids: []
         },
         created: function () {
-            this.fetchAsteroids();
+            //this.fetchAsteroids();
+            this.fetchAsteroidsLocal();
         },
         methods: {
-            fetchAsteroids: function () {
-                //var apiKey = 'lkgI9to0hRizfzk4xTAxtNTTFkkA4Mtq7y1yW5me';
-                var url = '/api/TestApi/IdVal';
-                axios.get(url)
-                    .then(function (res) {
-                        vm.asteroids = res.data.near_earth_objects.slice(0, 10);
-                    });
+            //fetchAsteroids: function () {
+            //    var apiKey = 'lkgI9to0hRizfzk4xTAxtNTTFkkA4Mtq7y1yW5me';
+            //    var url = '/api/TestApi/IdVal';
+            //    axios.get(url)
+            //        .then(function (res) {
+            //            vm.asteroids = res.data.near_earth_objects.slice(0, 10);
+            //        });
+            //},
+            fetchAsteroidsLocal: function () {
+                let payloadJSON = JSON.parse($("#payloadJSON").val());
+                this.asteroids = payloadJSON.near_earth_objects.slice(0, 10);
             },
             remove: function (index) {
                 this.asteroids.splice(index, 1);
