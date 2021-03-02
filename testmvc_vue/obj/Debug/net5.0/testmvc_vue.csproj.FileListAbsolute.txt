@@ -1,5 +1,6 @@
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\appsettings.json
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\Data\DataTest\asteroids.json
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\testmvc_vue.StaticWebAssets.xml
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\testmvc_vue.exe
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\bin\Debug\net5.0\testmvc_vue.deps.json
@@ -69,6 +70,8 @@ C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Areas
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\Vue.cshtml.g.cs
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\VueLocalRequest.cshtml.g.cs
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\VueWithPayload.cshtml.g.cs
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -84,4 +87,4 @@ C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\ref\testmvc
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\testmvc_vue.pdb
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\testmvc_vue.genruntimeconfig.cache
 C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\testmvc_vue.csprojAssemblyReference.cache
-C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\VueLocalRequest.cshtml.g.cs
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue\obj\Debug\net5.0\Razor\Views\Home\VueTemplateTest.cshtml.g.cs
