@@ -55,7 +55,35 @@ namespace testmvc_vue.Controllers
             return View();
         }
 
-        
+
+        //---------------------------------------------------------
+        public IActionResult blank1()
+        {
+            return View();
+        }
+        public IActionResult blank2()
+        {
+            return View();
+        }
+        public IActionResult blank3()
+        {
+            return View();
+        }
+        public IActionResult blank4()
+        {
+            return View();
+        }
+        public IActionResult blank5()
+        {
+            return View();
+        }
+        public IActionResult blank6()
+        {
+            return View();
+        }
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
