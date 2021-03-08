@@ -183,3 +183,8 @@ C:/Users/Paulo/source/repos/testmvc_vue/testmvc_vue/obj/Debug/net5.0/Razor/Views
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/obj/Debug/net5.0/Razor/Views/Home/blank4.cshtml.g.cs
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/obj/Debug/net5.0/Razor/Views/Home/blank5.cshtml.g.cs
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/obj/Debug/net5.0/Razor/Views/Home/blank6.cshtml.g.cs
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.AspNetCore.OData.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.OData.Core.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.OData.Edm.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.Spatial.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Data/DataTest/odata_test.json
