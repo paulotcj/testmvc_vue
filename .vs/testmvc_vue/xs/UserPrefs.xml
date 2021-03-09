@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{0A1908C3-9026-4615-A1B3-F7648E313660}|Default">
   <MonoDevelop.Ide.ItemProperties.testmvc__vue PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Views/Home/Index.cshtml">
     <Files>
       <File FileName="testmvc_vue/Views/Home/Index.cshtml" Line="29" Column="1" />
-      <File FileName="testmvc_vue/Views/Home/Vue.cshtml" Line="22" Column="1" />
-      <File FileName="testmvc_vue/Views/Shared/_Layout.cshtml" Line="63" Column="26" />
+      <File FileName="testmvc_vue/Views/Home/Vue.cshtml" />
+      <File FileName="testmvc_vue/Views/Shared/_Layout.cshtml" />
       <File FileName="testmvc_vue/Controllers/HomeController.cs" Line="31" Column="1" />
     </Files>
     <Pads>
@@ -12,11 +12,11 @@
         <State name="__root__">
           <Node name="testmvc_vue" expanded="True">
             <Node name="testmvc_vue" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
