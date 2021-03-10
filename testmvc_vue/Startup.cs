@@ -35,8 +35,7 @@ namespace testmvc_vue
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
-
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddOData();
         }
 
@@ -68,7 +67,6 @@ namespace testmvc_vue
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
-
                 endpoints.EnableDependencyInjection();
                 endpoints.Expand().Select().Count().OrderBy().Filter();
             });
