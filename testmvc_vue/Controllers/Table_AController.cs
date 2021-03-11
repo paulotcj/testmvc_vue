@@ -23,8 +23,8 @@ namespace testmvc_vue.Controllers
         // GET: Table_A
         public async Task<IActionResult> Index()
         {
-            
-            return View(await _context.Table_A.ToListAsync());
+            var a = await _context.Table_A.ToListAsync();
+            return View(a);
         }
 
         // GET: Table_A/Details/5
