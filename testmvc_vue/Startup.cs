@@ -18,6 +18,10 @@ namespace testmvc_vue
 {
     public class Startup
     {
+
+        public static Dictionary<string, Object> StartupObjects = new Dictionary<string, Object>();
+        public static string ConnectionString { get; set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -37,6 +41,9 @@ namespace testmvc_vue
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddOData();
+
+            ConnectionString = Configuration.GetConnectionString("DefaultConnection");
+            StartupObjects.Add("connectionString", ConnectionString);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

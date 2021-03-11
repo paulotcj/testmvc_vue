@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using testmvc_vue.Data;
 using testmvc_vue.Models;
 
+
 namespace testmvc_vue.Controllers
 {
     public class Table_AController : Controller
@@ -22,6 +23,7 @@ namespace testmvc_vue.Controllers
         // GET: Table_A
         public async Task<IActionResult> Index()
         {
+            
             return View(await _context.Table_A.ToListAsync());
         }
 
