@@ -1,0 +1,42 @@
+﻿@model testmvc_vue.Models.Table_B
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Table_B</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Col1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Col1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Col2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Col2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Col3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Col3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Col4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Col4)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.table_BID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

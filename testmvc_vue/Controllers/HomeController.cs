@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace testmvc_vue.Controllers
 {
     public class HomeController : Controller
     {
+        
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -25,6 +28,28 @@ namespace testmvc_vue.Controllers
 
         public IActionResult Privacy()
         {
+
+            //----------------------------------------------------------------------
+            //
+            // DAPPER
+            //
+            using (System.Data.IDbConnection cnn = new Microsoft.Data.SqlClient.SqlConnection(testmvc_vue.Data.ExecuteDB.GetConnectionString())) 
+            {
+                string sql = @"select * from table_A where Col1 = @table_A_col1 ; 
+                               select * from table_B where Col1 = @table_B_col1 ;";
+                List<Table_A> tableA_list = null;
+                List<Table_B> tableB_list = null;
+
+                var p = new { table_A_col1 = "Col1_6", table_B_col1 = "Col1_16" };
+
+                using (var lists = cnn.QueryMultiple(sql,p)) 
+                {
+                    tableA_list = lists.Read<Table_A>().ToList();
+                    tableB_list = lists.Read<Table_B>().ToList();
+                }
+            }
+            //----------------------------------------------------------------------
+
             return View();
         }
 
