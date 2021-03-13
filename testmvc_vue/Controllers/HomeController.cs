@@ -52,7 +52,7 @@ namespace testmvc_vue.Controllers
             // POSTGRES
             using (System.Data.IDbConnection cnn = new Npgsql.NpgsqlConnection(testmvc_vue.Data.ExecuteDB.GetConnectionString()))
             {
-                string sql = @"select * from table_a; 
+                string sql = @"select * from TABLE_A; 
                                select * from table_b;";
                 List<Table_A> tableA_list = null;
                 List<Table_B> tableB_list = null;
