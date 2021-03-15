@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paulo\\source\\repos\\testmvc_vue\\testmvc_vue\\testmvc_vue.csproj": {}
+    "C:\\Repos\\Lotus\\testmvc_vue\\testmvc_vue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paulo\\source\\repos\\testmvc_vue\\testmvc_vue\\testmvc_vue.csproj": {
+    "C:\\Repos\\Lotus\\testmvc_vue\\testmvc_vue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\testmvc_vue\\testmvc_vue\\testmvc_vue.csproj",
+        "projectUniqueName": "C:\\Repos\\Lotus\\testmvc_vue\\testmvc_vue.csproj",
         "projectName": "testmvc_vue",
-        "projectPath": "C:\\Users\\Paulo\\source\\repos\\testmvc_vue\\testmvc_vue\\testmvc_vue.csproj",
-        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paulo\\source\\repos\\testmvc_vue\\testmvc_vue\\obj\\",
+        "projectPath": "C:\\Repos\\Lotus\\testmvc_vue\\testmvc_vue.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\Lotus\\testmvc_vue\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "net5.0": {
@@ -59,6 +62,10 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[7.5.6, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -66,6 +73,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.3, )"
             }
           },
           "imports": [
@@ -86,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
