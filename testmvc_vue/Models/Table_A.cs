@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace testmvc_vue.Models
 {
-    //[Table("table_a")]
+
+    //[Table("table_a", Schema ="public")]
     public class Table_A
     {
         //[Column("table_aid")]
@@ -33,6 +34,3 @@ namespace testmvc_vue.Models
         public string Col4 { get; set; }
     }
 }
-
-
-
