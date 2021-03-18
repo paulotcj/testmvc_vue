@@ -19,8 +19,11 @@ namespace testmvc_vue
     public class Startup
     {
 
+        //------------------
+        //user objects
         public static Dictionary<string, Object> StartupObjects = new Dictionary<string, Object>();
         public static string ConnectionString { get; set; }
+        //------------------
 
         public Startup(IConfiguration configuration)
         {
@@ -39,12 +42,19 @@ namespace testmvc_vue
             //postgres change
             services.AddDbContext<ApplicationDbContext>(options => 
                 options.UseNpgsql(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("DefaultConnection")).UseLowerCaseNamingConvention()
+                );
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.Configure<IdentityOptions>(options => {
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 15;
+                options.Lockout.AllowedForNewUsers = true;
+            });
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddOData();
