@@ -25,6 +25,7 @@ namespace testmvc_vue.Data
 
         public DbSet<testmvc_vue.Models.Table_A> Table_A { get; set; }
         public DbSet<testmvc_vue.Models.Table_B> Table_B { get; set; }
+        public DbSet<testmvc_vue.Models.TestA> TestA { get; set; }
     }
 }
 
