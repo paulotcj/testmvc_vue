@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{0A1908C3-9026-4615-A1B3-F7648E313660}|Default">
   <MonoDevelop.Ide.ItemProperties.testmvc__vue PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Models/Table_A.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Views/Home/blank1.cshtml">
     <Files>
-      <File FileName="testmvc_vue/Controllers/HomeController.cs" />
-      <File FileName="testmvc_vue/Data/ApplicationDbContext.cs" Line="1" Column="1" />
-      <File FileName="testmvc_vue/Models/Table_A.cs" Line="10" Column="7" />
+      <File FileName="testmvc_vue/Views/Home/blank1.cshtml" Line="15" Column="1" />
+      <File FileName="testmvc_vue/Controllers/HomeController.cs" Line="105" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="testmvc_vue" expanded="True">
             <Node name="testmvc_vue" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Table_A.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="blank1.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

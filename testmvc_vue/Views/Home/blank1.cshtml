@@ -1,7 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Blank";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>This is a blank canvas - use this page to create you models/templates</p>
 
+<div class="text-center">
+    <h1 class="display-4">@testmvc_vue.Data.Utils.GetTranslation("welcome")</h1>
+
+    
+    <p>@testmvc_vue.Data.Utils.GetTranslation("lorem_ipsum1")</p>
+    <p>@testmvc_vue.Data.Utils.GetTranslation("lorem_ipsum2")</p>
+    <p>@testmvc_vue.Data.Utils.GetTranslation("lorem_ipsum3")</p>
+    <p>@testmvc_vue.Data.Utils.GetTranslation("lorem_ipsum4")</p>
+    <p>@testmvc_vue.Data.Utils.GetTranslation("lorem_ipsum5")</p>
+
+</div>

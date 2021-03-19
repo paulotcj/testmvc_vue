@@ -101,6 +101,7 @@ namespace testmvc_vue.Controllers
         //---------------------------------------------------------
         public IActionResult blank1()
         {
+            //var result =   Data.Utils.GetTranslation("welcome");
             return View();
         }
         public IActionResult blank2()
