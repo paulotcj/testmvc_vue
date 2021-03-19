@@ -18,6 +18,13 @@ namespace testmvc_vue
 {
     public class Startup
     {
+
+        //------------------
+        //user objects
+        public static Dictionary<string, Object> StartupObjects = new Dictionary<string, Object>();
+        public static string ConnectionString { get; set; }
+        //------------------
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,15 +35,38 @@ namespace testmvc_vue
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("DefaultConnection")));
+
+            //postgres change
+            services.AddDbContext<ApplicationDbContext>(options => 
+                options.UseNpgsql(
+                    Configuration.GetConnectionString("DefaultConnection")).UseLowerCaseNamingConvention()
+                );
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.Configure<IdentityOptions>(options => {
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 15;
+                options.Lockout.AllowedForNewUsers = true;
+            });
+
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddOData();
+
+            ConnectionString = Configuration.GetConnectionString("DefaultConnection");
+            StartupObjects.Add("connectionString", ConnectionString);
+
+            //services.AddRazorPages()
+            //    .AddViewOptions(options =>
+            //    {
+            //        options.HtmlHelperOptions.ClientValidationEnabled = false;
+            //    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

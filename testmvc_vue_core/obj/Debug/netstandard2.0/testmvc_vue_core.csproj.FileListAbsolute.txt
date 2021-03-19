@@ -1,0 +1,9 @@
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\bin\Debug\netstandard2.0\testmvc_vue_core.deps.json
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\bin\Debug\netstandard2.0\testmvc_vue_core.dll
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\bin\Debug\netstandard2.0\testmvc_vue_core.pdb
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.csprojAssemblyReference.cache
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.AssemblyInfoInputs.cache
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.AssemblyInfo.cs
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.dll
+C:\Users\Paulo\source\repos\testmvc_vue\testmvc_vue_core\obj\Debug\netstandard2.0\testmvc_vue_core.pdb

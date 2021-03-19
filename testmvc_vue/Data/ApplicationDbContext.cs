@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 using testmvc_vue_core.Models;
-
 
 namespace testmvc_vue.Data
 {
@@ -30,3 +28,5 @@ namespace testmvc_vue.Data
         public DbSet<TestA> TestA { get; set; }
     }
 }
+
+
