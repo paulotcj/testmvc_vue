@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using testmvc_vue.Models;
+using testmvc_vue_core.Models;
 
 namespace testmvc_vue.Controllers
 {
