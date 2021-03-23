@@ -1,32 +1,31 @@
 ﻿<Properties StartupConfiguration="{0A1908C3-9026-4615-A1B3-F7648E313660}|Default">
   <MonoDevelop.Ide.ItemProperties.testmvc__vue PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="testmvc_vue/Views/VueComponents/AsteroidGridVue.js">
     <Files>
-      <File FileName="testmvc_vue/Views/Home/Index.cshtml" Line="29" Column="1" />
-      <File FileName="testmvc_vue/Views/Home/Vue.cshtml" />
-      <File FileName="testmvc_vue/Views/Shared/_Layout.cshtml" />
+      <File FileName="testmvc_vue/Views/Home/Index.cshtml" Line="27" Column="8" />
       <File FileName="testmvc_vue/Controllers/HomeController.cs" Line="31" Column="1" />
+      <File FileName="testmvc_vue/Controllers/TestAsController.cs" Line="60" Column="1" />
+      <File FileName="testmvc_vue_core/Models/TestA.cs" Line="19" Column="35" />
+      <File FileName="testmvc_vue/Views/Home/Vue.cshtml" Line="125" Column="27" />
+      <File FileName="testmvc_vue/Views/Home/VueWithPayload.cshtml" Line="5" Column="67" />
+      <File FileName="testmvc_vue/Views/Home/blank1.cshtml" Line="16" Column="7" />
+      <File FileName="testmvc_vue/Views/Home/VueLocalRequest.cshtml" Line="29" Column="8" />
+      <File FileName="testmvc_vue/Views/VueComponents/AsteroidGridVue.js" Line="74" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="testmvc_vue" expanded="True">
-            <Node name="testmvc_vue" expanded="True">
+            <Node name="testmvc_vue" expanded="True" selected="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="VueComponents" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="lib" expanded="True">
-                  <Node name="jquery" expanded="True">
-                    <Node name="dist" expanded="True" />
-                  </Node>
-                  <Node name="Vue" expanded="True" />
-                </Node>
-              </Node>
+            </Node>
+            <Node name="testmvc_vue_core" expanded="True">
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -36,7 +35,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/Controllers/TestAsController.cs" relfile="testmvc_vue/Controllers/TestAsController.cs" line="60" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
