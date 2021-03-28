@@ -538,6 +538,7 @@ C:/Users/Paulo/source/repos/testmvc_vue/testmvc_vue/obj/Debug/net5.0/testmvc_vue
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/appsettings.json
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Data/DataTest/asteroids.json
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Data/DataTest/odata_test.json
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/mono_crash.11a6748113.0.json
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/testmvc_vue.StaticWebAssets.xml
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/testmvc_vue.deps.json
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/testmvc_vue.runtimeconfig.json
@@ -823,9 +824,12 @@ C:/Users/Paulo/source/repos/testmvc_vue/testmvc_vue/obj/Debug/net5.0/testmvc_vue
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/refs/WindowsBase.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/testmvc_vue.Views.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/testmvc_vue.Views.pdb
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/AutoMapper.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Dapper.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/EFCore.NamingConventions.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Humanizer.dll
+/Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/paulocosta/Desktop/Repositories/testmvc_vue/testmvc_vue/bin/Debug/net5.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
