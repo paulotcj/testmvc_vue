@@ -76,8 +76,9 @@ namespace testmvc_vue
                     OnTokenValidated = context =>
                     {
                         var userService = context.HttpContext.RequestServices.GetRequiredService<IUserService>();
-                        var userId = int.Parse(context.Principal.Identity.Name);
-                        var user = userService.GetById(userId);
+                        //var userId = int.Parse(context.Principal.Identity.Name);
+                        var userId = context.Principal.Identity.Name;
+                        var user = userService.GetByUsername(userId); //modified from example
                         if (user == null)
                         {
                             // return unauthorized if user no longer exists

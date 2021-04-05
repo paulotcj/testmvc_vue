@@ -11,6 +11,7 @@ namespace testmvc_vue.Areas.Services
         User Authenticate(string username, string password);
         IEnumerable<User> GetAll();
         User GetById(int id);
+        User GetByUsername(string username);
         User Create(User user, string password);
         void Update(User user, string password = null);
         void Delete(int id);
@@ -52,6 +53,11 @@ namespace testmvc_vue.Areas.Services
         public User GetById(int id)
         {
             return _context.Users.Find(id);
+        }
+
+        public User GetByUsername(string username)
+        {
+            return _context.Users.Where(x => x.Username == username).FirstOrDefault();
         }
 
         public User Create(User user, string password)

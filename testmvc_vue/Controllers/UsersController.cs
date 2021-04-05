@@ -49,7 +49,9 @@ namespace testmvc_vue.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                    new Claim(ClaimTypes.Name, user.Username),
+                    new Claim(ClaimTypes.NameIdentifier, user.Username.ToString()),
+                    //new Claim(ClaimTypes.UserData, "IsValid", ClaimValueTypes.String, "(local)" ) //it wwas just a test, do not use this line
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
