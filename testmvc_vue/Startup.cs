@@ -20,6 +20,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using testmvc_vue.Areas.Services;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
+using FluentValidation.AspNetCore;
+using System.Reflection;
+using System.IO;
 
 namespace testmvc_vue
 {
@@ -53,9 +56,34 @@ namespace testmvc_vue
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                //c.SwaggerDoc("v1", new OpenApiInfo
+                //{
+                //    Version = "v1",
+                //    Title = "ToDo API",
+                //    Description = "A simple example ASP.NET Core Web API",
+                //    TermsOfService = new Uri("https://example.com/terms"),
+                //    Contact = new OpenApiContact
+                //    {
+                //        Name = "Shayne Boyer",
+                //        Email = string.Empty,
+                //        Url = new Uri("https://twitter.com/spboyer"),
+                //    },
+                //    License = new OpenApiLicense
+                //    {
+                //        Name = "Use under LICX",
+                //        Url = new Uri("https://example.com/license"),
+                //    }
+                //});
 
-           
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath, true);
+            });
+
+
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -126,6 +154,7 @@ namespace testmvc_vue
 
             services.AddMvcCore(options =>
             {
+                options.Filters.Add(typeof(ValidatorActionFilter));
                 foreach (var outputFormatter in options.OutputFormatters.OfType<OutputFormatter>().Where(x => x.SupportedMediaTypes.Count == 0))
                 {
                     outputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
@@ -135,7 +164,7 @@ namespace testmvc_vue
                 {
                     inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
                 }
-            });
+            }).AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
 
             ConnectionString = Configuration.GetConnectionString("DefaultConnection");
             StartupObjects.Add("connectionString", ConnectionString);

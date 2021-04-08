@@ -5,9 +5,15 @@
     <UserSecretsId>aspnet-testmvc_vue-5500BE10-706A-493A-979D-0A4635339F6F</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="EFCore.NamingConventions" Version="5.0.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.4" />
@@ -41,5 +47,11 @@
   <ItemGroup>
     <Folder Include="Areas\Services\" />
     <Folder Include="Areas\Entities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="testmvc_vue.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
