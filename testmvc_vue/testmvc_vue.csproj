@@ -45,7 +45,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Services\" />
     <Folder Include="Areas\Entities\" />
   </ItemGroup>
 

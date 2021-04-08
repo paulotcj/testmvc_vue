@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using testmvc_vue.Areas.Services;
 using testmvc_vue.Data;
 using testmvc_vue.DTOs;
 using testmvc_vue_core.Models;
@@ -19,11 +20,11 @@ namespace testmvc_vue.Controllers
     [Route("ptest")]
     public class PtestController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IPtestService _ptestService;
         private IMapper _mapper;
-        public PtestController(ApplicationDbContext context, IMapper mapper)
+        public PtestController(IPtestService ptestService, IMapper mapper)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _ptestService = ptestService ?? throw new ArgumentNullException(nameof(ptestService));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
@@ -35,27 +36,20 @@ namespace testmvc_vue.Controllers
         [HttpPost("create")]
         public async Task<int> Create([FromBody]PtestRequest model)
         {
-            var tableb = _mapper.Map<Table_B>(model);
+            var savedItem = await _ptestService.Create(_mapper.Map<Table_B>(model));
 
-            tableb.table_BID = DateTime.Now.Millisecond;
-            await _context.Table_B.AddAsync(tableb);
-
-            await _context.SaveChangesAsync();
-
-            return tableb.table_BID;
+            return savedItem.table_BID;
         }
 
+        /// <summary>
+        /// Get Grid data of tableB items
+        /// </summary>
+        /// <param name="cancellationToken"></param>
+        /// <returns>List of tableB items</returns>
         [HttpPost("grid")]
         public async Task<IEnumerable<Table_B>> GridData(CancellationToken cancellationToken)
         {
-            var tableb = new Table_B
-            {
-                table_BID = 1,
-                Col1 = "1"
-            };
-            var data = await _context.Table_B.Where(i => !string.IsNullOrEmpty(i.Col1)).ToListAsync(cancellationToken);
-
-            return data;
+            return await _ptestService.GetGridData(cancellationToken);
         }
     }
 }

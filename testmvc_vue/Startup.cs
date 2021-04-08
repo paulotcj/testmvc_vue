@@ -136,6 +136,7 @@ namespace testmvc_vue
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPtestService, PtestService>();
             //---------
 
             services.AddDatabaseDeveloperPageExceptionFilter();
